@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <title>Gardian</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Gardian.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+    <!--ヘッダー-->
+        <header>
+            <div class="wrapper">
+                <div class="header_top">
+                    <p>WEB戦略,CMS構築,ホームページ制作・効果アップなら東京のガーディアン</p>
+                    <img src="img/logo.jpg" alt="Logo">
+                </div>
+            </div>
+            <div class="header_navi header_wrapper">
+                <div class="navi_menu2 bar pc_part">
+                </div>
+                <div class="wrapper header_navi">
+                    <div class="navi_menu bar menu1">
+                      ナビ1
+                    </div>
+                    <div class="navi_menu bar">
+                      ナビ2
+                    </div>
+                    <div class="navi_menu bar">
+                      ナビ3
+                    </div>
+                    <div class="navi_menu bar">
+                      ナビ4
+                    </div>
+                </div>
+                <div class="navi_menu2 bar pc_part">
+                </div>
+            </div>
+        </header>
+    <!--メインコンテンツ-->
+        <main class="wrapper">
+            <div class="page-main">
+                <article>
+                    <h2>サービス</h2>
+                    <div class="main_article">
+                        <div class="main_contents content1">
+                            <img src="freely.jpg" alt="Freely">
+                            <p class="headline">Freely</p>
+                            <p>
+                                Freelyとは、㈱ガーディアンが提供するCMS付WEBサイト構築、
+                                運営サービスです。
+                            </p>
+                        </div>
+                        <div class="main_contents">
+                            <img src="darwin.jpg" alt="Darwin">
+                            <p class="headline">Darwin</p>
+                            <p>
+                                Darwinは、株式会社ガーディアンが誇る最高級のCMS付ホーム
+                                ページ構築・運営サービスです。
+                            </p>
+                        </div>
+                        <div class="main_contents content2">
+                            <img src="owlet.jpg" alt="OWLet">
+                            <p class="headline">OWLet</p>
+                            <p>
+                                ４年で１０００サイト超のオーダーメイド＆スクラッチ構築を
+                                実現した魔法のようなコアテクノロジー
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <section>
+                    <h2>求める人物像</h2>
+                    <ul>
+                        <li>『ウォーム・ハート』＆『クール・ヘッド』</li>
+                        <li>ミスを恐れないチャレンジ精神</li>
+                        <li>勇気を持って行動できる若者</li>
+                    </ul>
+                    <div class="main_section_detail">
+                        <p class="headline2">
+                            『ウォーム・ハート』＆『クール・ヘッド』
+                        </p>
+                    </div>
+                    <p>
+                        株式会社ガーディアンの<span>経営原則</span>です。<br>
+                        <br>
+                        仕事におけるいかなる場合でも上の言葉を決して忘れないで下さい。<br>
+                        ガーディアンでは、温かい心情（Warm heart）と冷静さ頭脳（Cool head）を
+                        とても大事に考えています。<br>
+                        これは、ケンブリッジ大学の初代経済学教授Alfred Marshall教授の言葉を引用したものです。
+                    </p>
+                </section>
+                <section>
+                    <h2>HPを成功に導く３つのWEBノウハウ</h2>
+                    <ol>
+                        <li>デザインをどう考えるか！？</li>
+                        <li>コンテンツをどう考えるか！？</li>
+                        <li>運営をどう考えるか！？</li>
+                    </ol>
+                </section>
+    <!--フォーム-->
+                <section>
+                    <h2>フォーム</h2>
+                    <form class="checkform" action="/form.php" method="POST" name="contact-form">
+                        <table>
+                            <tr>
+                                <th>名前</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>年齢</th>
+                                <td>
+                                    <select name="age">
+                                        <option value="10">10代</option>
+                                        <option value="20" selected>20代</option>
+                                        <option value="30">30代</option>
+                                        <option value="40">40代</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>性別</th>
+                                <td>
+                                    <input type="radio" name="gender" value="男" checked>男
+                                    <input type="radio" name="gender" value="女">女                       
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>お問い合わせ項目</th>
+                                <td>
+                                    <input type="checkbox" name="contact" value="無料相談" checked>無料相談
+                                    <input type="checkbox" name="contact" value="資料請求">資料請求
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>内容</th>
+                                <td>
+                                    <textarea name="detail"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="button">
+                            <input type="submit" value="送信する">
+                        </div>
+                    </form>
+                </section>
+            </div>               
+    <!--サイドバー-->
+            <aside>
+                <img src="bannr.gif" alt="バナー">
+                <img src="bannr.gif" alt="バナー">
+                <img src="bannr.gif" alt="バナー">
+            </aside>
+        </main>    
+    <!--フッター-->
+        <footer>
+            <div class="wrapper">
+                <div class="footer_logo">
+                    <img src="logo.jpg" alt="Logo">
+                </div>
+            </div>
+            <p class="bar cr"><small>Copyright &copy; 2012-2015 GURDIAN. Inc. All rights reserved.</small></p>
+        </footer>
+    </body>
+</html>
