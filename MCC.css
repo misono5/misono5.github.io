@@ -1,0 +1,468 @@
+@charset "UTF-8";
+
+body {
+    text-align: center;
+  }
+
+
+/*画面サイズが481px以上の場合のCSS*/
+@media screen and (min-width: 481px) {
+    .sp_part {
+        display: none;
+    }
+
+    .site-wrapper {
+        width: 1400px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    
+    .page-header {
+        position: relative;
+    }
+    
+    .header {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .header_top {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        height: 80px;
+        position: relative;
+        color: white;
+        background-color: red;
+    }
+    
+    .header_logo {
+        position: absolute;
+        right: 71%;
+        z-index: 1;
+    }
+    
+    .catchphrase {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        right: -7%;
+        top: 25%;
+        font-size: 15px;
+    }
+    
+    .companyname {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        right: -8%;
+        top: 25%;
+        font-size: 28px;
+    }
+    
+    .header_middle {
+        position: relative;
+        right: -8%;
+    }
+    
+    .header_tell, .header_mail-form {
+        margin: 10px;
+    }
+    
+    .page-header_navi {
+        border-top: 1px solid black;
+    }
+    
+    .navi1, .navi2, .navi3, .navi4 {
+        vertical-align: bottom;
+    }
+    
+    .contents1, .main_dm_background, .contents2, .main_contact_image, .reason {
+        width: 100%;
+    }
+    
+    .main_postcard {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .postcard_contact {
+        position: absolute;
+        bottom: 10%;
+        right: 15%;
+        z-index: 1;
+    }
+    
+    .main_quote {
+        position: relative;
+        margin: auto;
+        z-index: 2;
+    }
+    
+    .main_quote_phone {
+        position: absolute;
+        top: 25%;
+        right: 17%;
+        z-index: 1;
+    }
+    
+    .main_quote_mail-form {
+        position: absolute;
+        bottom: 10%;
+        right: 18%;
+        z-index: 1;
+    }
+    
+    .main_dm {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+    
+    .main_dm_background {
+        vertical-align: bottom;
+    }
+    
+    .main_dm_price {
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        transform: translateY(-50%);
+        z-index: 1;
+        width: 70%;
+    }
+    
+    .contents2 {
+        vertical-align: bottom;
+    }
+    
+    .main_contact {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+    
+    .main_contact_image {
+        vertical-align: bottom;
+    }
+    
+    .main_contact_phone {
+        position: absolute;
+        bottom: 38%;
+        right: 45%;
+        z-index: 1;
+    }
+    
+    .main_contact_mail-form {
+        position: absolute;
+        bottom: 11%;
+        right: 40%;
+        z-index: 1;
+    }
+    
+    
+    .main_middle {
+        position: relative;
+    }
+    
+    .main_reason1, .main_suggestion {
+        margin: 30px auto;
+        padding: 30px;
+        border: 1.5px solid red;
+        width: 75%;
+    }
+    
+    .reason1-elements, .suggestion_elements {
+        margin: 30px 0 0 0;
+    }
+    
+    .main_reason1_headline1 {
+        position: relative;
+        right: 7%;
+    }
+    
+    .main_reason1_headline2, .main_suggestion_headline2 {
+        position: relative;
+        right: 15%;
+    }
+    
+    .explain {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        text-align: left;
+        line-height: 2;
+        border-top: 1px solid black;
+    }
+
+    .main_reason1_text {
+        width: 47%;
+        font-size: 1em;
+        margin-right: 20px;
+    }
+    
+    .main_side-menu {
+        position: absolute;
+        margin: auto 0;
+        width: 5%;
+        top: 20%;
+        right: 0;
+        border-top: 1px solid red;
+        border-left: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+    
+    .side-menu1, .side-menu2, .side-menu3, .side-menu4 {
+       border-bottom: 1px solid red;
+       width: 100%;
+    }
+    
+    
+    .main_suggestion_ttl {
+        display: block;
+        position: relative;
+        right: -25%;
+    }
+    
+    .main_suggestion_headline1 {
+        position: relative;
+        right: 13%;
+    }
+    
+    .main_suggestion_headline3 {
+        position: relative;
+        right: 27%;
+    }
+    
+    .explain2 {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 30px 30px 30px 0;
+        text-align: left;
+        line-height: 2;
+        border-top: 1px solid black;
+    }
+
+    .main_suggestion_text {
+        width: 55%;
+        font-size: 1em;
+        margin-right: 20px; 
+    }
+}
+
+
+
+/*画面サイズが480px以下の場合のCSS*/
+@media screen and (max-width: 480px) {
+    .pc_part {
+        display: none;
+    }
+
+    .site-wrapper {
+        width: 460px;
+        padding: 0 10px;
+    }
+
+    p {
+        font-size: 0.8em;
+    }    
+
+    .header_top {
+        width: 100%;
+        position: relative;
+    }
+
+    .header_logo {
+        width: 15% ;
+        position: absolute;
+        right: 85%;
+        z-index: 1;
+    }
+
+    .header_ttl {
+        width: 70%;
+    }
+
+    
+    .header_middle {
+        position: relative;
+    }
+
+    .header_tell {
+        width: 230px;
+        position: absolute;
+        right: 50%;
+        top: 18%;
+    }
+    
+    .header_mail-form {
+        width: 200px;
+        position: relative;
+        right: -26%;
+        top: 23%;
+    }
+    
+    
+    .contents1, .main_dm_background, .postcard_box, .contents2, .main_contact_image, .reason {
+        width: 100%;
+    }
+    
+    .main_postcard {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .postcard_contact {
+        width: 75%;
+        position: absolute;
+        bottom: 6%;
+        right: 13%;
+        z-index: 1;
+    }
+    
+    .main_quote {
+        position: relative;
+        margin: auto;
+        z-index: 2;
+    }
+
+    .quote {
+        width: 100%;
+        height: 375px;
+        margin: 10px 0;
+        background-color: orange;
+        border-radius: 10px;
+    }
+    
+    .main_quote_image {
+        width: 75%;
+    }
+
+    .quote_contact {
+        width: 95%;
+        position: relative;
+        right: -3%;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    .main_quote_phone, .main_quote_mail-form {
+        width: 80%;
+        z-index: 1;
+    }
+
+    .dot {
+        display: inline-flex;
+    }
+
+    .main_quote_mail {
+        width: 65%;
+    }
+
+    
+    .main_dm {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .main_dm_background {
+        vertical-align: bottom;
+        height: 1300px;
+    }
+    
+    .main_dm_price {
+        width: 67%;
+        position: absolute;
+        top: 50%;
+        right: 30%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    .dm {
+        width: 140%;
+    }
+    
+    .contents2 {
+        vertical-align: bottom;
+    }
+    
+    .main_contact {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .main_contact_image {
+        vertical-align: bottom;
+    }
+    
+    .main_contact_phone {
+        width: 90%;
+        position: absolute;
+        bottom: 40%;
+        right: 6%;
+        z-index: 1;
+    }
+    
+    .main_contact_mail-form {
+        width: 90%;
+        position: absolute;
+        bottom: 7%;
+        right: 5%;
+        z-index: 1;
+    }
+    
+    
+    .main_middle {
+        position: relative;
+    }
+    
+    .main_reason1 {
+        width: 75%;
+        margin: 30px auto;
+        padding: 30px;
+        border: 1.5px solid red;
+    }
+    
+    .reason1-elements {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .main_reason1_headline1 {
+        width: 100%;
+        position: relative;
+        right: 3%;
+    }
+    
+    .main_reason1_headline2 {
+        width: 100%;
+    }
+
+    .main_reason1_image2 {
+        width: 75%;
+        position: relative;
+        right: -5%;
+        margin: 20px;
+        text-align: center;        
+    }
+    
+    .explain {
+        width: 100%;
+        text-align: left;
+        border-top: 1px solid black;
+    }
+
+    .reason_image {
+        width: 100%;
+    }
+
+    .main_reason1_text {
+        width: 100%;
+        font-size: 0.85em;
+    }
+}
+
