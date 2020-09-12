@@ -1,0 +1,869 @@
+@charset "UTF-8";
+
+body {
+    text-align: center;
+  }
+
+
+/*画面サイズが481px以上の場合のCSS*/
+@media screen and (min-width: 481px) {
+    .sp_part {
+        display: none;
+    }
+
+    .site-wrapper {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .header, .faq  {
+        position: relative;
+        z-index: 2;
+    }
+
+    .top {
+        width: 100%;
+        vertical-align: bottom;
+    }
+
+    .top_headline {
+        position: absolute;
+        top: 13%;
+        right: 7%;
+        z-index: 1;
+    }
+    
+
+    .trial {
+        position: absolute;
+        top: 29%;
+        right: 0%;
+        z-index: 1;
+    }
+
+    .trial_btn {
+        position: absolute;
+        top: 75%;
+        right: 35%;
+        z-index: 1;
+    }
+
+    .regular {
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        z-index: 1;
+    }
+
+    .regular_btn {
+        position: absolute;
+        top: 77%;
+        right: 15%;
+        z-index: 1;
+    }
+
+    .three_regular {
+        position: absolute;
+        top: 75%;
+        right: 0%;
+        z-index: 1;
+    }
+
+    .three_regular_btn {
+        position: absolute;
+        top: 75%;
+        right: 15%;
+        z-index: 1;
+    }
+
+
+    .anxiety {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+    }
+
+    .anxiety_image {
+        width: 90%;
+        position: absolute;
+        top: 1%;
+        right: 5%;
+        z-index: 1;
+    }
+
+    .anxiety_slogan {
+        width: 80%;
+        margin: -120% 0 0 10%;
+    }
+
+    .calcium_image {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .sango_image {
+        margin-top: -13%;
+        vertical-align: bottom;
+    }
+
+
+    .price2 {
+        display: flex;
+        flex-direction: column;
+        vertical-align: bottom;        
+    }
+
+    .price2_bg {
+        width: 100%;
+        height: 1700px;
+    }
+
+    .trial2 {
+        position: relative;
+        margin: -165% 25% 0 0;
+    }
+
+    .trial2_btn {
+        position: absolute;
+        top: 73%;
+        right: 13%;
+        z-index: 1;
+    }
+
+    .regular2, .three_regular2 {
+        position: relative;
+        margin: 2% 25% 0 0;
+    }
+
+    .regular2_btn {
+        position: absolute;
+        top: 77%;
+        right: -15%;
+        z-index: 1;
+    }
+
+    .three_regular2_btn {
+        position: absolute;
+        top: 75%;
+        right: -15%;
+        z-index: 1;
+    }
+
+    
+    .safety {
+        position: relative;
+        z-index: 2;
+    }
+
+    .safety_bg {
+        width: 100%;
+        height: 2250px;
+    }
+
+    .safety_top {
+        width: 90%;
+        position: absolute;
+        top: 2%;
+        right: 5%;
+        z-index: 1;
+    }
+
+    .point {
+        position: absolute;
+        top: 27%;
+        right: 5%;
+        z-index: 1;
+    }
+
+    .point_top {
+        width: 90%;
+        vertical-align: bottom;
+    }
+
+    .point_bg {
+        width: 89%;
+        border: 5px solid navy;
+    }
+
+    .point1 {
+        position: absolute;
+        top: 12%;
+        right: 7%;
+        z-index: 1;
+    }
+
+    .point_headline {
+        width: 90%;
+        vertical-align: bottom;
+    }
+
+    .point_box {
+        width: 747px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 4.5%;
+        border: 3px solid orangered;
+        border-radius: 10px;
+        background-color: lemonchiffon;
+        text-align: left;
+    }
+
+    .point p {
+        font-size: 1.3em;
+        font-weight: bold;
+        margin: 0 0 0 20px;
+    }
+
+    .point span {
+        color: orange;
+    }
+
+    .point_image {
+        width: 50%;
+        margin: 20px;
+    }
+
+    .point2 {
+        position: absolute;
+        top: 33%;
+        right: 7%;
+        z-index: 1;
+    }
+
+    .point3 {
+        position: absolute;
+        top: 54%;
+        right: 7%;
+        z-index: 1;
+    }
+
+    .point4 {
+        position: absolute;
+        top: 76%;
+        right: 7%;
+        z-index: 1;
+    }
+
+
+    .drag_image {
+        width: 100%;
+        vertical-align: bottom;
+    }
+
+
+    .price3 {
+        position: relative;
+        z-index: 2;
+        vertical-align: bottom;
+    }
+
+    .price3_bg {
+        vertical-align: bottom;
+    }
+
+    .trial3 {
+        position: absolute;
+        top: 1%;
+    }
+
+    .trial3_btn {
+        position: absolute;
+        top: 73%;
+        right: 35%;
+    }
+
+    .regular3 {
+        position: absolute;
+        top: 31%;
+    }
+
+    .regular3_btn {
+        position: absolute;
+        top: 74%;
+        right: 15%;
+    }
+
+    .three_regular3 {
+        position: absolute;
+        top: 66%;
+    }
+
+    .three_regular3_btn {
+        position: absolute;
+        top: 76%;
+        right: 15%;
+    }
+
+
+    .faq_bg {
+        width: 100%;
+        height: 3100px;
+    }
+
+    .faq_top {
+        position: absolute;
+        top: 2%;
+        right: 20%;
+    }
+
+    .faq_box {
+        width: 90%;
+        position: absolute;
+        top: 5%;
+        right: 0%;
+    }
+
+    .qa_box {
+        width: 90%;
+        margin: 40px 0;
+        border: 2px solid blue;
+    }
+
+    .question {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        background-color: blue;
+        vertical-align: bottom;
+    }
+
+    .icon {
+        width: 10%;
+        height: 10%;
+        position: absolute;
+        right: 89%;
+    }
+
+    .question h1 {
+        color: #ffffff;
+    }
+
+    .answer {
+        width: 810px;
+        height: 210px;
+        background-color: lemonchiffon;
+        vertical-align: bottom;
+    }
+
+    .answer_top {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .answer h1, .remarks h1 {
+        color: navy;
+    }
+
+    .answer_text {
+        width: 100%;
+        margin-left: 10px;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: left;
+        color: navy;
+    }
+
+    .faq_answer {
+        width: 90%;
+        margin-left: 40px;
+        padding-left: 40px;
+    }
+
+
+    .remarks_box {
+        width: 82%;
+        position: absolute;
+        top: 54%;
+        right: 8%;
+        background-color: #ffffff;
+    }
+
+    .remarks {
+        border: 1px solid #000000;
+        margin: 20px 0;
+        padding: 20px 0;
+    }
+
+    .bar {
+        margin-bottom: 20px;
+        color: navy;
+    }
+
+    .remarks p {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .remarks_text {
+        width: 70%;
+        margin: 10px 40px;
+        padding: 0 40px;        
+        text-align: left;
+        margin: 10px 40px;
+    }
+
+}
+
+
+
+/*画面サイズが480px以下の場合のCSS*/
+@media screen and (max-width: 480px) {
+    .pc_part {
+        display: none;
+    }
+
+    .site-wrapper {
+        width: 640px;
+        padding: 0 10px;
+    }
+
+    p {
+        font-size: 0.85em;
+    }
+
+
+    .header, .faq  {
+        position: relative;
+        z-index: 2;
+    }
+
+    .top {
+        width: 80%;
+        vertical-align: bottom;
+    }
+
+    .top_headline {
+        width: 75%;
+        position: absolute;
+        top: 13%;
+        right: 14%;
+        z-index: 1;
+    }
+    
+
+    .trial {
+        position: absolute;
+        top: 29%;
+        right: 0%;
+        z-index: 1;
+    }
+
+    .trial_image, .regular_image, .three_regular_image, .trial2_image, .regular2_image, .three_regular2_image {
+        width: 80%;
+    }
+
+    .trial_btn {
+        width: 40%;
+        position: absolute;
+        top: 75%;
+        right: 38%;
+        z-index: 1;
+    }
+
+    .regular {
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        z-index: 1;
+    }
+
+    .regular_btn {
+        width: 60%;
+        position: absolute;
+        top: 77%;
+        right: 18%;
+        z-index: 1;
+    }
+
+    .three_regular {
+        position: absolute;
+        top: 75%;
+        right: 0%;
+        z-index: 1;
+    }
+
+    .three_regular_btn {
+        width: 60%;
+        position: absolute;
+        top: 75%;
+        right: 18%;
+        z-index: 1;
+    }
+
+
+    .anxiety{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: -10%;
+        z-index: 2;
+    }
+
+    .anxiety_bg {
+        width: 80%;
+    }
+
+    .anxiety_image {
+        width: 77%;
+        position: absolute;
+        top: 1%;
+        z-index: 1;
+    }
+
+    .anxiety_slogan {
+        width: 70%;
+        margin: -95% 0 0 6%;    
+    }
+
+    .calcium_image {
+        width: 65%;
+        position: absolute;
+        top: 24%;
+        right: 26%;
+        z-index: 1;
+    }
+
+    .sango_image {
+        width: 80%;
+        margin: 40% 5% 0 0;
+        position: relative;
+        z-index: 1;
+        vertical-align: bottom;
+    }
+
+
+    .price2 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: -10%;
+        vertical-align: bottom;
+    }
+
+    .price2_bg {
+        width: 80%;
+        height: 800px;
+    }
+
+    .trial2 {
+        position: relative;
+        margin: -125% 15% 0 0;   
+    }
+
+    .trial2_btn {
+        width: 40%;
+        position: absolute;
+        top: 73%;
+        right: 38%;
+        z-index: 1;
+    }
+
+    .regular2, .three_regular2 {
+        position: relative;
+        margin: 2% 19% 0 0;
+    }
+
+    .regular2_btn {
+        width: 60%;
+        position: absolute;
+        top: 77%;
+        right: 20%;
+        z-index: 1;
+    }
+
+    .three_regular2_btn {
+        width: 60%;
+        position: absolute;
+        top: 75%;
+        right: 20%;
+        z-index: 1;
+    }
+
+    
+    .safety {
+        position: relative;
+        z-index: 2;
+    }
+
+    .safety_bg {
+        width: 80%;
+        height: 1450px;
+        vertical-align: bottom;
+    }
+
+    .safety_top {
+        width: 75%;
+        position: absolute;
+        top: 2%;
+        right: 10%;
+        z-index: 1;
+    }
+
+    .point {
+        position: absolute;
+        top: 24%;
+        right: 0%;
+        z-index: 1;
+    }
+
+    .point_top {
+        width: 75%;
+        vertical-align: bottom;
+    }
+
+    .point_bg {
+        width: 73%;
+        height: 1000px;
+        border: 5px solid navy;
+    }
+
+    .point1 {
+        position: absolute;
+        top: 10%;
+        right: 0%;
+        z-index: 1;
+    }
+
+    .point_headline {
+        width: 70%;
+        vertical-align: bottom;
+    }
+
+    .point_headline2 {
+        width: 75%;
+        vertical-align: bottom;
+    }
+
+    .point_box {
+        width: 450px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 14%;
+        border: 3px solid orangered;
+        border-radius: 10px;
+        background-color: lemonchiffon;
+        text-align: left;
+    }
+
+    .point p {
+        font-size: 0.85em;
+        font-weight: bold;
+        margin: 0 0 0 20px;
+    }
+
+    .point span {
+        color: orange;
+    }
+
+    .point_image {
+        width: 50%;
+        margin: 20px;
+    }
+
+    .point2 {
+        position: absolute;
+        top: 33%;
+        right: 0%;
+        z-index: 1;
+    }
+
+    .point3 {
+        position: absolute;
+        top: 55%;
+        right: 0%;
+        z-index: 1;
+    }
+
+    .point4 {
+        position: absolute;
+        top: 77%;
+        right: 0%;
+        z-index: 1;
+    }
+
+
+    .drag_image {
+        width: 80%;
+        vertical-align: bottom;
+    }
+
+
+    .price3 {
+        position: relative;
+        z-index: 2;
+        vertical-align: bottom;
+    }
+
+    .price3_bg {
+        width: 80%;
+        vertical-align: bottom;
+    }
+
+    .trial3 {
+        position: absolute;
+        top: 1%;
+    }
+
+    .trial3_image, .regular3_image, .three_regular3_image {
+        width: 80%;
+    }
+
+    .trial3_btn {
+        width: 42%;
+        position: absolute;
+        top: 73%;
+        right: 37%;
+    }
+
+    .regular3 {
+        position: absolute;
+        top: 31%;
+    }
+
+    .regular3_btn {
+        width: 58%;
+        position: absolute;
+        top: 74%;
+        right: 20%;
+    }
+
+    .three_regular3 {
+        position: absolute;
+        top: 66%;
+    }
+
+    .three_regular3_btn {
+        width: 58%;
+        position: absolute;
+        top: 76%;
+        right: 20%;
+    }
+
+
+    .faq_bg {
+        width: 80%;
+        height: 2500px;
+    }
+
+    .faq_top {
+        width: 55%;
+        position: absolute;
+        top: 2%;
+        right: 22%;
+    }
+
+    .faq_box {
+        width: 73%;
+        position: absolute;
+        top: 4%;
+        right: 10%;
+    }
+
+    .qa_box {
+        width: 90%;
+        margin: 40px 0;
+        border: 2px solid blue;
+    }
+
+    .question {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        background-color: blue;
+        vertical-align: bottom;
+    }
+
+    .icon {
+        width: 10%;
+        height: 10%;
+        position: absolute;
+        right: 89%;
+    }
+
+    .icon img {
+        width: 90%;
+    }    
+
+    .faq_q {
+        margin-left: 30px;
+    }
+
+    .question h1 {
+        font-size: 1.1em;
+        color: #ffffff;
+    }
+
+    .answer {
+        width: 420px;
+        height: 150px;
+        background-color: lemonchiffon;
+        vertical-align: bottom;
+    }
+
+    .answer_top {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .answer h1, .remarks h1 {
+        font-size: 1em;
+        color: navy;
+    }
+
+    .faq_answer h1 {
+        margin-left: 10px;
+        text-align: left;
+    }    
+
+    .answer_text {
+        width: 95%;
+        margin: 0 10px;
+        font-size: 0.85em;
+        font-weight: bold;
+        text-align: left;
+        color: navy;
+    }
+
+    .faq_answer {
+        width: 90%;
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+
+
+    .remarks_box {
+        width: 67%;
+        position: absolute;
+        top: 48%;
+        right: 16%;
+        background-color: #ffffff;
+    }
+
+    .remarks {
+        border: 1px solid #000000;
+        margin: 20px 0;
+        padding: 20px 0;
+    }
+
+    .bar {
+        margin-bottom: 20px;
+        color: navy;
+    }
+
+    .remarks p {
+        font-size: 0.85em;
+        font-weight: bold;
+    }
+
+    .remarks_text {
+        width: 82%;
+        padding: 0 40px;        
+        text-align: left;
+    }
+}
