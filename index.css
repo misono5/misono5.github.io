@@ -20,10 +20,17 @@ a:hover {
     opacity: 0.5;
 }
 
-.wrapper {
-    width: 1080px;
-    margin: 0 auto;
-    padding: 0 10px;
+
+/*画面サイズが480px以上の場合のCSS*/
+@media screen and (min-width: 480px) {
+    .sp_part {
+        display: none;
+    }
+    .wrapper {
+        width: 1080px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
 }
 
 .header_navi {
@@ -224,7 +231,6 @@ h4 {
     gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 400px 400px 400px;
-    margin: 30px 0;
 }
 
 .works-contents {
@@ -233,12 +239,12 @@ h4 {
     height: auto;
     line-height: 0;
     padding: 7.5px;  
-  }
+}
 
 .works-image {
     display: block;
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: 80%;
     position: absolute;
     left: 0;
     right: 0;
@@ -247,39 +253,39 @@ h4 {
     margin: 0 auto;
     z-index: 1;
     overflow: hidden; 
-  }
+}
 
-  .works-image img {
-    width: 100%;
+.works-image img {
+    max-width: 100%;
     height: auto;
     transition: 0.5s;
-  }
+}
 
-  .works-image img:hover {
+.works-image img:hover {
     opacity: 0.5;
-  }
+}
 
-  .works-dedsc {
+.works-dedsc {
     position: absolute;
     right: 0;
-    bottom: -5%;
+    bottom: -10%;
     left: 0;
     padding: 10px 25px;
     z-index: 2;
-  }
+}
 
-  h3 {
+h3 {
     font-size: 26px;
     font-family: 'Unna', serif;
-  }
+}
 
-  .works-dedsc p {
+.works-dedsc p {
     text-align: left;
     line-height: 1.2;
-  }
+}
 
 
-/*Contact・フォーム*/
+/*Contact・フォーム
 .contact-desc {
     line-height: 1.5em;
 }
@@ -345,9 +351,297 @@ input[type=submit] {
 .button:hover {
     opacity: 0.5;
 }
+*/
+
+
+/*画面サイズが480px以下の場合のCSS*/
+@media screen and (max-width: 480px) {
+    .pc_part {
+        display: none;
+    }
+
+    .wrapper {
+        width: 100%;
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+
+
+/*Hamburger menu*/
+    #nav-drawer {
+        position: relative;
+    }
+
+    .nav-unshown {
+        display:none;
+    }
+
+    #nav-open {
+        display: inline-block;
+        width: 30px;
+        height: 22px;
+        vertical-align: middle;
+    }
+
+    #nav-open span, #nav-open span:before, #nav-open span:after {
+        position: absolute;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background: #af5555f2;
+        display: block;
+        content: '';
+        cursor: pointer;
+    }
+
+    #nav-open span:before {
+        bottom: -8px;
+    }
+
+    #nav-open span:after {
+        bottom: -16px;
+    }
+
+    #nav-close {
+        display: none;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: lightgray;
+        transition: .5s ease-in-out;
+    }
+    
+    #nav-content {
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        width: 90%;
+        max-width: 200px;
+        height: 100%;
+        font-size: 2em;
+        background: #f4f0d0c7;
+        color: #af5555f2;
+        transition: .5s ease-in-out;
+        -webkit-transform: translateX(105%);
+        transform: translateX(105%);
+    }
+    
+    #nav-drawer a {
+        text-decoration: none;
+    }
+    
+    #nav-drawer ul {
+        list-style: none;
+    }
+    
+    #nav-drawer li {
+        overflow: hidden;
+    }    
+    
+    #nav-input:checked ~ #nav-close {
+        display: block;
+        opacity: .5;
+    }
+    
+    #nav-input:checked ~ #nav-content {
+        -webkit-transform: translateX(-60%);
+        transform: translateX(-60%);
+        box-shadow: 6px 0 25px rgba(0,0,0,.15);
+    }
+    
+    label {
+        display: block;
+        margin: 0 0 4px 0;
+        padding : 15px;
+        line-height: 1;
+        color :#af5555f2;
+        background : #f4f0d0c7;
+        cursor :pointer;
+    }
+    
+    input {
+        display: none;
+    }
+
+
+/*TOP・メイン*/
+    .main_box {
+        width: 80%;
+        height: 750px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+        background: white;
+        border-radius: 50px;
+    }
+
+    .main-logo {
+        width: 80%;
+        height: auto;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        opacity: 0.7;
+    }
+
+    .top_introduce {
+        width: 80%;
+        margin: 30px;
+        position: absolute;
+        top: 70%;
+    }
+
+    .top_introduce p {
+        text-align: left;
+        letter-spacing: 0.1rem;
+        line-height: 1.7;
+    }
+
+    .main-name {
+        font-weight: bold;
+        font-family: 'Unna', serif;
+    }
+
+    .top_introduce a {
+        font-weight: bold;
+        color: #6a6a6c;
+    }    
+
+
+/*About・Profile*/
+    section {
+        margin: 30px 0 100px 30px;
+    }
+
+    h2 {
+        font-size: 36px;
+        letter-spacing: 0.4rem;
+        font-family: 'Unna', serif;
+    }
+
+    .about_main h3 {
+        text-align: left;
+        font-size: 26px;
+        font-family: 'Unna', serif;
+    }
+
+    .about_introduce {
+        display: inline-block;
+        margin: 30px;
+    }
+
+    .about_introduce p {
+        margin: auto;
+        text-align: left;
+        line-height: 1.5;
+        background-color: floralwhite;
+        border-radius: 30px;
+        padding: 20px;
+    }
+
+    .about_main-name {
+        font-size: 20px;
+        font-family: 'Unna', serif;
+        font-weight: bold;
+    }
+
+    .career {
+        line-height: 2.0;
+    }
+
+    .profile-photo {
+        width: 80%;
+        height: auto;
+        border-radius: 50px;
+        margin: 30px;
+        opacity: 0.8;
+    }
+
+/*About・Skills*/
+    h4 {
+        text-align: left;
+    }
+
+    .skill-list {
+        display: inline-grid;
+    }
+
+    .skill-contents {
+        margin: 0 30px 20px 0;
+    }
+
+    .section-text {
+        text-align: left;
+        line-height: 1.2;
+    }
+
+/*About・Vision*/
+    .vision-desc {
+        width: 80%;
+        margin: auto;
+        background: floralwhite;
+        border-radius: 50px;
+        padding: 20px;
+    }
+
+    .slogan {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .vision-desc p {
+        font-size: 16px;
+        letter-spacing: 0.2rem;
+        line-height: 1.5;
+        text-align: left;
+    }    
+    
+
+/*Works・メイン*/
+    .works-list {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, 30em);
+        grid-template-rows: 400px 400px 400px 400px 400px;
+    }
+
+    .works-image img {
+        width: 80%;
+        height: auto;
+        transition: 0.5s;
+    }
+
+    .works-dedsc {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0 30px;
+        padding: 10px 25px;
+        z-index: 2;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-family: 'Unna', serif;
+    }
+
+    .works-dedsc p {
+        font-size: 14px;
+        text-align: left;
+        line-height: 1.2;
+    }
+}
 
 
 /*マウスオーバー時に画像をズーム*/
 .works-image img:hover {
     transform: scale(1.1, 1.1);
-  }
+}

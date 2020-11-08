@@ -4,11 +4,12 @@
     <head>
         <title>About | Misono's Portfolio</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
     </head>
 
     <body>
-    <!--ヘッダー-->    
+    <!--ヘッダー-->  
         <header>
             <div class="wrapper">
                 <div class="header_navi">
@@ -19,17 +20,34 @@
                             Misono Wada
                         </a>
                     </h1>
-                    <ul class="header_menu-bar">
-                        <li class="header_menu">
-                            <a href="about.html">About</a>
-                        </li>
-                        <li class="header_menu">
-                            <a href="works.html">Works</a>
-                        </li>
-                        <li class="header_menu">
-                            <a href="mailto:la.tormenta.dream@gmail.com">Contact</a>
-                        </li>
-                    </ul>
+                    <div class="pc_part">
+                        <ul class="header_menu-bar">
+                            <li class="header_menu">
+                                <a href="about.html">About</a>
+                            </li>
+                            <li class="header_menu">
+                                <a href="works.html">Works</a>
+                            </li>
+                            <li class="header_menu">
+                                <a href="mailto:la.tormenta.dream@gmail.com">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+    <!--Hamburger menu-->
+                    <div class="sp_part">
+                        <div id="nav-drawer">
+                            <input id="nav-input" type="checkbox" class="nav-unshown">
+                            <label id="nav-open" for="nav-input"><span></span></label>
+                            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                            <div id="nav-content">
+                                <ul id="sample">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="works.html">Works</a></li>
+                                    <li><a href="mailto:la.tormenta.dream@gmail.com">Contact</a></li>
+                                </ul>                   
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -66,7 +84,7 @@
                            クライアントに寄り添う形で作品を提供していきます。
                            <br>
                         </p>
-                        <img class="profile-photo" src="profile.jpg" alt="後ろ姿">
+                        <img class="profile-photo" src="img/profile.jpg" alt="後ろ姿">
                     </div>
                 </section>
                 <section id="skills">
@@ -111,10 +129,10 @@
             </div>
         </main>
     <!--フッター-->
-        <footer>
-            <div class="wrapper">
+        <div class="wrapper">
+            <footer>
                 <p>© Misono Wada</p>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </body>
 </html>

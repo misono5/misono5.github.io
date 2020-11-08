@@ -4,6 +4,7 @@
     <head>
         <title>Works | Misono's Portfolio</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
     </head>
 
@@ -19,17 +20,34 @@
                             Misono Wada
                         </a>
                     </h1>
-                    <ul class="header_menu-bar">
-                        <li class="header_menu">
-                            <a href="about.html">About</a>
-                        </li>
-                        <li class="header_menu">
-                            <a href="works.html">Works</a>
-                        </li>
-                        <li class="header_menu">
-                            <a href="mailto:la.tormenta.dream@gmail.com">Contact</a>
-                        </li>
-                    </ul>
+                    <div class="pc_part">
+                        <ul class="header_menu-bar">
+                            <li class="header_menu">
+                                <a href="about.html">About</a>
+                            </li>
+                            <li class="header_menu">
+                                <a href="works.html">Works</a>
+                            </li>
+                            <li class="header_menu">
+                                <a href="mailto:la.tormenta.dream@gmail.com">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+    <!--Hamburger menu-->
+                    <div class="sp_part">
+                        <div id="nav-drawer">
+                            <input id="nav-input" type="checkbox" class="nav-unshown">
+                            <label id="nav-open" for="nav-input"><span></span></label>
+                            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                            <div id="nav-content">
+                                <ul id="sample">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="works.html">Works</a></li>
+                                    <li><a href="mailto:la.tormenta.dream@gmail.com">Contact</a></li>
+                                </ul>                   
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -42,8 +60,8 @@
                 <div class="works-list">
                     <div class="works-contents">
                         <div class="works-image">
-                            <a href="Bally.html">
-                                <img src="Bally.png" alt="アパレルブランドWebサイト">
+                            <a href="file:///C:/Users/wada%20misono/Documents/Uptech%20Academy/BALLY/Bally.html">
+                                <img src="img/Bally.png" alt="アパレルブランドWebサイト">
                             </a>
                         </div>
                         <div class="works-dedsc">
@@ -55,8 +73,8 @@
                     </div>
                     <div class="works-contents">
                         <div class="works-image">
-                            <a href="SAIKYO.html">
-                                <img src="SAIKYODIALOGUELINE.png" alt="交通系ポータルWebサイト">
+                            <a href="file:///C:/Users/wada%20misono/Documents/wada_misono_progress/SAIKYO%20DIALOGUE%20LINE/SAIKYO.html">
+                                <img src="img/SAIKYODIALOGUELINE.png" alt="交通系ポータルWebサイト">
                             </a>
                         </div>
                         <div class="works-dedsc">
@@ -68,8 +86,8 @@
                     </div>
                     <div class="works-contents">
                         <div class="works-image">
-                            <a href="MCC.html">
-                                <img src="MailCustomerCenter.png" alt="LPサイト">
+                            <a href="file:///C:/Users/wada%20misono/Documents/wada_misono/LP/index_PC_page1.html">
+                                <img src="img/MailCustomerCenter.png" alt="LPサイト">
                             </a>
                         </div>
                         <div class="works-dedsc">
@@ -80,8 +98,8 @@
                     </div>
                     <div class="works-contents">
                         <div class="works-image">
-                            <a href="Sango.html">
-                                <img src="Sango.png" alt="LPサイト">
+                            <a href="file:///C:/Users/wada%20misono/Documents/wada_misono/LP_Sango/LP_sango.html">
+                                <img src="img/Sango.png" alt="LPサイト">
                             </a>
                         </div>
                         <div class="works-dedsc">
@@ -92,8 +110,8 @@
                     </div>
                     <div class="works-contents">
                         <div class="works-image">
-                            <a href="Gardian.html">
-                                <img src="Gardian.png" alt="LPサイト">
+                            <a href="file:///C:/Users/wada%20misono/Documents/wada_misono/Gardian/Gardian.html">
+                                <img src="img/Gardian.png" alt="LPサイト">
                             </a>
                         </div>
                         <div class="works-dedsc">
@@ -106,10 +124,10 @@
             </div>
         </main>
     <!--フッター-->
-        <footer>
-            <div class="wrapper">
+        <div class="wrapper">
+            <footer>
                 <p>© Misono Wada</p>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </body>
 </html>
