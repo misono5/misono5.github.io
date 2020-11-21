@@ -608,8 +608,8 @@ input[type=submit] {
     .works-list {
         display: grid;
         gap: 20px;
-        grid-template-columns: repeat(auto-fit, 30em);
-        grid-template-rows: 400px 400px 400px 400px 400px;
+        grid-template-columns: repeat(auto-fit, 25em);
+        grid-template-rows: 330px 330px 300px 350px 360px;
     }
 
     .works-image img {
@@ -624,13 +624,14 @@ input[type=submit] {
         bottom: 0;
         left: 0;
         margin: 0 30px;
-        padding: 10px 25px;
+        padding: 10px 10px;
         z-index: 2;
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 18px;
         font-family: 'Unna', serif;
+        word-break: keep-all;
     }
 
     .works-dedsc p {
